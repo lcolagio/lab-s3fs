@@ -16,4 +16,5 @@ RUN apk --update --no-cache add fuse alpine-sdk automake autoconf libxml2-dev fu
     apk del git automake autoconf;
 
 COPY run.sh run.sh
+RUN chmod 755 run.sh 
 CMD ./run.sh
